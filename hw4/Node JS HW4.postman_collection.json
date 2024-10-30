@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "d0892a74-c2ea-4b5a-9f59-0b0ce63a02f9",
+		"name": "Node JS HW4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39108640"
+	},
+	"item": [
+		{
+			"name": "getRoot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/"
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/1"
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"surname\": \"Ivanov\",\r\n    \"name\": \"Ivan\",\r\n    \"patronymic\": \"Ivanovich\",\r\n    \"age\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"surname\": \"Ivanov new\",\r\n    \"name\": \"Ivan new\",\r\n    \"patronymic\": \"Ivanovich new\",\r\n    \"age\": 500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/users/2"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/users/2"
+			},
+			"response": []
+		}
+	]
+}
